@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Registration Form
+	</title>
+</head>
+<body>
+  <h1>
+  	Registration Form
+  </h1>
+  <form>
+  	<div>
+  		<label for="NombreUsuario">
+  			First Name:*
+  		</label>
+  		<input type="text" name="NombreUsuario" id="NombreUsuario"/>
+  	</div>
+  	<div>
+  		<label for="ApellidoUsuario">
+  			Last Name:*
+  		</label>
+  		<input type="text" name="ApellidoUsuario" id="ApellidoUsuario"/>
+  	</div>
+  	<div>
+  		<label for="CorreoUsuario">
+  			Email Address:*
+  		</label>
+  		<input type="text" name="CorreoUsuario" id="CorreoUsuario"/>
+  	</div>
+  	<div>
+  		<label for="ContraseñaUsuario">
+  			Password:*
+  		</label>
+  		<input type="password" name="ContraseñaUsuario" id="ContraseñaUsuario"/>
+  	</div>
+  	<div>
+  		<label for="NacimientoUsuario">
+  			Birthday:*
+  		</label>
+  		<input type="date" name="NacimientoUsuario" placeholder="mm/dd/yyyy" id="NacimientoUsuario"/>
+  	</div>
+  	<p>
+  	     Gender Identity:
+    </p>
+  	<div>
+  		<input type="radio" name="Genero" id="Masculino" />
+  		<label for="Masculino">
+                Male
+        </label>
+        <input type="radio" name="Genero" id="Femenino" />
+  		<label for="Femenino">
+                Female
+        </label>
+        <input type="radio" name="Genero" id="Nobinario" />
+  		<label for="Nobinario">
+                Non-binary
+        </label>
+        <input type="radio" name="Genero" id="Nodecir" />
+  		<label for="Nodecir">
+                I prefer not to answer
+        </label>
+  	</div>
+  	<p>
+  	     A short description about myself:
+    </p>
+    <textarea name="comentario" cols="50" rows="3"></textarea>
+    <div>
+        <label for="Programas">
+            Favorite Language:
+        </label>
+        <select id="Programas" name="Programas">
+            <option value="JavaScript">
+               JavaScript
+            </option>
+            <option value="Python">
+               Python
+            </option>
+            <option value="HTML">
+                HTML
+            </option>
+        </select> 
+    </div>
+    <div>
+        <input type="checkbox" name="recibir" id="recibir" checked >
+        <label for="recibir"> 
+        	Yes, I would like to recive periodic email updates.
+        </label>
+    </div>
+    <input type="submit" value="Create Account" >
+    <p> * indicates a required field</p>
+  </form>
+
+</body>
+</html>
